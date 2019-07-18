@@ -16,8 +16,10 @@ const useStyles = makeStyles(theme => ({
     minHeight: "100vh"
   },
   main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2)
+    display: "flex",
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    flexGrow: "1"
   }
 }));
 
@@ -30,7 +32,7 @@ function App() {
         <div className={classes.root}>
           <CssBaseline />
           <Navbar />
-          <Container component="main" className={classes.main} maxWidth="sm">
+          <Container component="main" className={classes.main}>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />

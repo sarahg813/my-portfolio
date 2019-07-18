@@ -6,7 +6,11 @@ const useStyles = makeStyles(theme => ({
   footer: {
     padding: theme.spacing(2),
     marginTop: "auto",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
+    color: "white"
+  },
+  footerText: {
+    fontFamily: "Raleway"
   }
 }));
 
@@ -15,7 +19,11 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <Container maxWidth="sm">
-        <Typography variant="body1" align="center">
+        <Typography
+          variant="body1"
+          align="center"
+          className={classes.footerText}
+        >
           &copy; 2019
         </Typography>
       </Container>

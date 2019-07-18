@@ -13,9 +13,13 @@ import {
   MenuItem
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import "../styles.scss";
 
 const styleSheet = {
   appbar: {
+    backgroundColor: "transparent"
+  },
+  mobileBar: {
     backgroundColor: "transparent"
   },
   list: {
@@ -31,13 +35,13 @@ const styleSheet = {
     cursor: "pointer"
   },
   button: {
-    margin: 1
+    margin: 1,
+    color: "white",
+    fontFamily: "Raleway"
   },
   toolbar: {
-    flexWrap: "wrap"
-  },
-  toolbarTitle: {
-    flexGrow: 1
+    flexWrap: "wrap",
+    justifyContent: "flex-end"
   }
 };
 
@@ -65,9 +69,10 @@ class Navbar extends Component {
 
   //Mobile Screens
   createDrawer() {
+    const { classes } = this.props;
     return (
       <div>
-        <AppBar>
+        <AppBar position="static" elevation={0} className={classes.mobileBar}>
           <Toolbar>
             <Grid
               container
@@ -76,16 +81,11 @@ class Navbar extends Component {
               alignItems="center"
             >
               <MenuIcon
-                className={this.props.classes.sideBarIcon}
+                className={classes.sideBarIcon}
                 onClick={() => {
                   this.setState({ drawer: true });
                 }}
               />
-
-              <Typography color="inherit" variant="headline">
-                Title
-              </Typography>
-              <Typography color="inherit" variant="headline" />
             </Grid>
           </Toolbar>
         </AppBar>
@@ -109,7 +109,7 @@ class Navbar extends Component {
               this.setState({ drawer: false });
             }}
           >
-            <MenuList className={this.props.classes.list}>
+            <MenuList className={classes.list}>
               <MenuItem component={NavLink} exact to="/" button divider>
                 Home
               </MenuItem>
@@ -135,14 +135,6 @@ class Navbar extends Component {
     return (
       <AppBar position="static" elevation={0} className={classes.appbar}>
         <Toolbar className={classes.toolbar}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            className={classes.toolbarTitle}
-          >
-            Company name
-          </Typography>
           <nav>
             <Button
               component={NavLink}
