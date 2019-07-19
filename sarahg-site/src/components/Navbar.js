@@ -5,7 +5,6 @@ import {
   AppBar,
   Button,
   Toolbar,
-  Typography,
   withStyles,
   Grid,
   SwipeableDrawer,
