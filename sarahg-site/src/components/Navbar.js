@@ -12,7 +12,6 @@ import {
   MenuItem
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import "../styles.scss";
 
 const styleSheet = {
   appbar: {

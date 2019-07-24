@@ -1,11 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Container, CssBaseline, Typography } from "@material-ui/core";
-import {
-  makeStyles,
-  MuiThemeProvider,
-  createMuiTheme
-} from "@material-ui/core/styles";
+import { makeStyles, MuiThemeProvider } from "@material-ui/core/styles";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -23,13 +19,29 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    minHeight: "100vh"
+    height: "100%",
+    minHeight: "100vh",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    [theme.breakpoints.down("sm")]: {
+      backgroundImage: 'url("/images/meandopie-sm.jpg")'
+    },
+    [theme.breakpoints.up("sm")]: {
+      backgroundImage: 'url("/images/meandopie-md.jpg")'
+    },
+    [theme.breakpoints.up("md")]: {
+      backgroundImage: 'url("/images/meandopie-lg.jpg")'
+    },
+    [theme.breakpoints.up("xl")]: {
+      backgroundImage: 'url("/images/meandopie-xl.jpg")'
+    }
   },
   main: {
     display: "flex",
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
-    flexGrow: "1"
+    flex: "1 0 auto"
   }
 }));
 

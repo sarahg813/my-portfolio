@@ -1,5 +1,8 @@
 @import "sass-mq";
 
+html {
+  height: 100%;
+}
 body {
   background-image: url("/img/meandopie-sm.jpg");
   background-size: cover;

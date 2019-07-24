@@ -7,7 +7,8 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     marginTop: "auto",
     backgroundColor: "transparent",
-    color: "white"
+    color: "white",
+    flexShrink: 0
   },
   footerText: {
     fontFamily: "Raleway"

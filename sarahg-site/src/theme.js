@@ -35,4 +35,8 @@ theme.typography.h2 = {
   }
 };
 
+theme.typography.body1 = {
+  fontSize: "1.1rem"
+};
+
 export default theme;
