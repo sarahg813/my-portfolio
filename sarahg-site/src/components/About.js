@@ -12,25 +12,28 @@ import { makeStyles } from "@material-ui/core/styles";
 import tileData from "./tileData";
 
 const useStyles = makeStyles(theme => ({
-  about: {
-    backgroundColor: "rgba(255, 255, 255, 0.9)"
+  box: {
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    [theme.breakpoints.up("sm")]: {
+      margin: "0 5em"
+    }
   },
   container: {
     margin: "2em 0"
   },
   div: {
-    width: "50%",
+    width: "100%",
     margin: "auto",
     paddingBottom: "1em",
-    [theme.breakpoints.down("sm")]: {
-      width: "100%"
+    [theme.breakpoints.up("sm")]: {
+      width: "50%"
     }
   },
   image: {
-    width: "75px",
+    width: "45px",
     height: "auto",
-    [theme.breakpoints.down("sm")]: {
-      width: "45px"
+    [theme.breakpoints.up("sm")]: {
+      width: "75px"
     }
   },
   text: {
@@ -47,7 +50,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.about}>
+    <Box className={classes.box}>
       <Container className={classes.container}>
         <Typography
           variant="h4"
