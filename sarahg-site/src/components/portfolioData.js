@@ -11,16 +11,6 @@ const portfolioData = [
     title: "Beautiful Shelter website screenshot"
   },
   {
-    project: "DIYe",
-    description:
-      "A social media ios app for DIYers. Allows users to post pictures of what they've created and add a caption.",
-    languages: "[ React Native, Expo, GraphQL, Node, Express, mongoDB ]",
-    link: "#",
-    github: "https://github.com/sarahg813/final-project/tree/master/DIYe-App",
-    img: "/images/diye.png",
-    title: "DIYe app screenshot"
-  },
-  {
     project: "What Do You Wanna Eat?",
     description:
       "A web app to help you decide when you're being indecisive. The site will give you options on what to eat with the help of the Yelp API, Google API, and Edamam API.",
@@ -29,16 +19,6 @@ const portfolioData = [
     github: "https://github.com/sarahg813/whattoeat",
     img: "/images/wdywe.png",
     title: "What Do You Wanna Eat? website screenshot"
-  },
-  {
-    project: "Bamazon",
-    description:
-      "A command line storefront where a customer user can view and purchase items, and a manager user can update inventory etc.",
-    languages: "[ JavaScript, MySQL, npm Inquirer ]",
-    link: "#",
-    github: "https://github.com/sarahg813/bamazon",
-    img: "/images/bamazon.png",
-    title: "Bamazon app screenshot"
   },
   {
     project: "Giftastic",

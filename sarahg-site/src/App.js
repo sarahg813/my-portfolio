@@ -23,9 +23,10 @@ const useStyles = makeStyles(theme => ({
     minHeight: "100vh",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
+    backgroundAttachment: "fixed",
     [theme.breakpoints.down("sm")]: {
-      backgroundImage: 'url("/images/meandopie-sm.jpg")'
+      backgroundImage: 'url("/images/meandopie-sm.jpg")',
+      backgroundAttachment: "inital"
     },
     [theme.breakpoints.up("sm")]: {
       backgroundImage: 'url("/images/meandopie-md.jpg")'
