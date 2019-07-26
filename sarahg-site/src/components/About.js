@@ -1,12 +1,10 @@
 import React from "react";
 import {
   Container,
-  Grid,
   GridList,
   GridListTile,
   Typography,
-  Box,
-  Paper
+  Box
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import tileData from "./tileData";

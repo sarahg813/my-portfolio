@@ -23,19 +23,14 @@ const useStyles = makeStyles(theme => ({
       marginRight: theme.spacing(1)
     }
   },
-  column: {
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-      alignItems: "center"
-    }
-  },
   container: {
     [theme.breakpoints.up("sm")]: {
       margin: "2em 0"
     }
   },
   image: {
-    width: "21em"
+    maxWidth: "100%",
+    height: "auto"
   },
   paper: {
     marginBottom: "1.5em",
@@ -77,9 +72,16 @@ const Portfolio = () => {
         <div className={classes.div}>
           {portfolioData.map(portfolio => (
             <Paper className={classes.paper} key={portfolio.project}>
-              <Grid container className={classes.grid} spacing={2}>
-                <Grid item container className={classes.column}>
-                  <Grid item xs container direction="column" spacing={2}>
+              <Grid container className={classes.grid}>
+                <Grid item container spacing={2}>
+                  <Grid
+                    item
+                    xs={12}
+                    lg={6}
+                    container
+                    direction="column"
+                    spacing={2}
+                  >
                     <Grid item xs>
                       <Typography
                         gutterBottom
@@ -103,6 +105,7 @@ const Portfolio = () => {
                       <Button
                         variant="outlined"
                         target="_blank"
+                        rel="noopener noreferrer"
                         href={portfolio.link}
                         className={classes.button}
                         size="small"
@@ -112,6 +115,7 @@ const Portfolio = () => {
                       <Button
                         variant="outlined"
                         target="_blank"
+                        rel="noopener noreferrer"
                         href={portfolio.github}
                         className={classes.button}
                         size="small"
@@ -120,7 +124,7 @@ const Portfolio = () => {
                       </Button>
                     </Grid>
                   </Grid>
-                  <Grid item>
+                  <Grid item xs={12} lg={6}>
                     <img
                       className={classes.image}
                       alt={portfolio.title}

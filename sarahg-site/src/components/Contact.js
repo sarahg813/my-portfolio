@@ -41,16 +41,28 @@ const Contact = () => {
         <FontAwesomeIcon icon="envelope" /> goon.sarah&#64;gmail.com
       </Typography>
       <div>
-        <a href="https://github.com/sarahg813" target="_blank">
+        <a
+          href="https://github.com/sarahg813"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon className={classes.icons} icon={["fab", "github"]} />
         </a>
-        <a href="https://linkedin.com/in/sarahgoon" target="_blank">
+        <a
+          href="https://linkedin.com/in/sarahgoon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon
             className={classes.icons}
             icon={["fab", "linkedin"]}
           />
         </a>
-        <a href="https://angel.co/sarah-goon" target="_blank">
+        <a
+          href="https://angel.co/sarah-goon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon
             className={classes.icons}
             icon={["fab", "angellist"]}

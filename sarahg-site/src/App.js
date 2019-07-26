@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import { Container, CssBaseline, Typography } from "@material-ui/core";
+import { Container, CssBaseline } from "@material-ui/core";
 import { makeStyles, MuiThemeProvider } from "@material-ui/core/styles";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
