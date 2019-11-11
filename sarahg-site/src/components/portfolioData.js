@@ -1,5 +1,24 @@
 const portfolioData = [
   {
+    project: "Suite Meraki (work in progress)",
+    description: "A website for a hair and beauty salon.",
+    languages: "[ React, Material-UI ]",
+    link: "https://suite-meraki.herokuapp.com/",
+    github: "https://github.com/sarahg813/suite-meraki-site",
+    img: "/images/suitemeraki.jpg",
+    title: "Suite Meraki's website screenshot"
+  },
+  {
+    project: "Yumiko Harris's Portfolio (work in progress)",
+    description:
+      "A portfolio website for Yumiko Harris, a pole dance instructor. It showcases her talents and gives more information about what she teaches and how to contact her.",
+    languages: "[ React, Material-UI ]",
+    link: "https://yumiko-harris.herokuapp.com/",
+    github: "https://github.com/sarahg813/yumi-site",
+    img: "/images/yumikoharris.png",
+    title: "Yumiko Harris' Portfolio website screenshot"
+  },
+  {
     project: "Beautiful Shelter",
     description:
       "A website for a shelter that lists available and adopted pets.Admin can dynamically update pet listings and add to the newsboard in the CLI.",
