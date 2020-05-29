@@ -25,11 +25,17 @@
   justify-content: flex-end;
 }
 
-@mixin flex-column-center {
+@mixin flex-col-ctr-ctr {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flex-col-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @mixin page-title {

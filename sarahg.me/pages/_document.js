@@ -13,11 +13,7 @@ class MyDocument extends Document {
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Montserrat&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Petit+Formal+Script"
+            href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Montserrat&family=Petit+Formal+Script&display=swap"
             rel="stylesheet"
           />
         </Head>
