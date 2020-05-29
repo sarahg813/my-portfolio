@@ -1,0 +1,17 @@
+.index-root {
+  h1 {
+    font-family: $font-stack-tertiary;
+    font-size: 4.5rem;
+    color: white;
+    line-height: 0;
+  }
+  p {
+    font-family: $font-stack-tertiary;
+    font-size: 2rem;
+    color: white;
+    line-height: 0;
+    margin-left: 19rem;
+  }
+  height: 100%;
+  @include flex-col-ctr;
+}
