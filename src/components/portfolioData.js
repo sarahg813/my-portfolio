@@ -1,7 +1,18 @@
 const portfolioData = [
   {
+    project: "Suite Meraki",
+    description:
+      "A website for a hair and beauty salon in San Jose, CA. Recorded myself for the homepage background video. Used SEO best practices to attract new customers.",
+    languages: "[ React, Material-UI ]",
+    link: "https://suitemeraki.com/",
+    github: "https://github.com/sarahg813/suite-meraki-site",
+    img: "/images/suite-meraki.png",
+    title: "Suite Meraki's website screenshot",
+  },
+  {
     project: "Poledex",
-    description: "A directory to find pole studios in the Mid-Atlantic.",
+    description:
+      "A directory to find pole studios in the Mid-Atlantic. Users can search for a studio, view studios list, view a map of all studios, and view more info about a studio. Admin can decide to add, edit or delete a studio from the admin dashboard.",
     languages: "[ MongoDB, Express.js, React, Node.js, Redux, Bootstrap ]",
     link: "https://poledex.herokuapp.com/",
     github: "https://github.com/sarahg813/mern-poledex",
@@ -9,23 +20,14 @@ const portfolioData = [
     title: "Poledex screenshot",
   },
   {
-    project: "Suite Meraki (work in progress)",
-    description: "A website for a hair and beauty salon.",
-    languages: "[ React, Material-UI ]",
-    link: "https://suite-meraki.herokuapp.com/",
-    github: "https://github.com/sarahg813/suite-meraki-site",
-    img: "/images/suite-meraki.jpg",
-    title: "Suite Meraki's website screenshot",
-  },
-  {
-    project: "Yumiko Harris's Portfolio (work in progress)",
+    project: "World Travel Tracker",
     description:
-      "A portfolio website for Yumiko Harris, a pole dance instructor. It showcases her talents and gives more information about what she teaches and how to contact her.",
+      "A CRUD (Create, Read, Update, and Delete) web app to track your travels.",
     languages: "[ React, Material-UI ]",
-    link: "https://yumiko-harris.herokuapp.com/",
-    github: "https://github.com/sarahg813/yumi-site",
-    img: "/images/yumikoharris.png",
-    title: "Yumiko Harris' Portfolio website screenshot",
+    link: "https://crud-travel-tracker.herokuapp.com/",
+    github: "https://github.com/sarahg813/crud-travel-tracker",
+    img: "/images/travel-tracker.png",
+    title: "Suite Meraki's website screenshot",
   },
   {
     project: "Beautiful Shelter",
