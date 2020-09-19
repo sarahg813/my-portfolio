@@ -1,0 +1,38 @@
+.about-root {
+  text-align: center;
+  margin: 2.5rem;
+  @include bp(lg) {
+    margin: 5rem 10rem;
+  }
+}
+.tiles-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1.5rem 0;
+  @include bp(md) {
+    margin: 1.5rem auto;
+    width: 60vw;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  @include bp(lg) {
+    margin: 1.5rem auto;
+    width: 50vw;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+}
+
+.tile-div {
+  @include flex-column-center;
+  p {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.tile-img {
+  width: 45px;
+  height: auto;
+  @include bp(md) {
+    width: 75px;
+  }
+}

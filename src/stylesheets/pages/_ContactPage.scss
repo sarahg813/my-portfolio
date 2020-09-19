@@ -1,0 +1,24 @@
+.contact-root {
+  @include flex-root;
+  flex-direction: column;
+  h2 {
+    font-family: $font-stack-tertiary;
+    font-size: 3.25rem;
+  }
+  div {
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-email,
+.contact-icons,
+.contact-email:hover,
+.contact-icons:hover {
+  text-decoration: none;
+  color: $black;
+}
+
+.contact-icons {
+  font-size: 1.3rem;
+  margin: 1rem;
+}

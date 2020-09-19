@@ -1,0 +1,15 @@
+.home-root {
+  @include flex-root;
+}
+
+.home-container {
+  @include flex-column-start;
+  h1 {
+    font-family: $font-stack-tertiary;
+    color: $white;
+    font-size: 3rem;
+    @include bp(md) {
+      font-size: 5rem;
+    }
+  }
+}

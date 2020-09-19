@@ -1,0 +1,44 @@
+.portfolio-root {
+  margin: 2.5rem;
+}
+
+.portfolio-title {
+  margin-bottom: 2rem;
+  h2 {
+    font-family: $font-stack-secondary;
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: auto;
+  @include bp(md) {
+    grid-template-columns: auto auto;
+  }
+}
+.card {
+  width: 300px;
+  margin-bottom: 2rem;
+  @include bp(md) {
+    width: 315px;
+  }
+  @include bp(lg) {
+    width: 450px;
+  }
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.card-link {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+}

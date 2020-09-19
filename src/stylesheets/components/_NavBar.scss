@@ -1,0 +1,14 @@
+.navbar {
+  background-color: $white;
+}
+
+.navbar-brand {
+  font-size: 1.75rem !important;
+  color: $black !important;
+  font-family: $font-stack-tertiary;
+}
+
+.nav-link {
+  font-family: $font-stack-primary;
+  color: $black !important;
+}
