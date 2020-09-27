@@ -6,6 +6,7 @@ import HomePage from "../HomePage";
 import AboutPage from "../AboutPage";
 import PortfolioPage from "../PortfolioPage";
 import ContactPage from "../ContactPage";
+import ResumePage from "../ResumePage";
 
 const MainContainer = ({ location }) => {
   const currentKey = location.pathname.split("/")[1] || "/";
@@ -20,6 +21,7 @@ const MainContainer = ({ location }) => {
               <Route path="/about" component={AboutPage} />
               <Route path="/portfolio" component={PortfolioPage} />
               <Route path="/contact" component={ContactPage} />
+              <Route path="/resume" component={ResumePage} />
             </Switch>
           </section>
         </CSSTransition>

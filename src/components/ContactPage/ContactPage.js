@@ -13,6 +13,7 @@ const ContactPage = () => {
         <a
           href="mailto:goon.sarah@gmail.com"
           target="_top"
+          aria-label="email"
           className="contact-email"
         >
           <FontAwesomeIcon icon="envelope" /> goon.sarah&#64;gmail.com{" "}
@@ -23,6 +24,7 @@ const ContactPage = () => {
           href="https://github.com/sarahg813"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github"
           className="contact-icons"
         >
           <FontAwesomeIcon icon={["fab", "github"]} />
@@ -31,6 +33,7 @@ const ContactPage = () => {
           href="https://linkedin.com/in/sarahgoon"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
           className="contact-icons"
         >
           <FontAwesomeIcon icon={["fab", "linkedin"]} />
@@ -39,6 +42,7 @@ const ContactPage = () => {
           href="https://angel.co/sarah-goon"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="AngelList"
           className="contact-icons"
         >
           <FontAwesomeIcon icon={["fab", "angellist"]} />
@@ -47,6 +51,7 @@ const ContactPage = () => {
           href="https://twitter.com/sarahg813"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Twitter"
           className="contact-icons"
         >
           <FontAwesomeIcon icon={["fab", "twitter"]} />

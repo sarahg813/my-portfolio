@@ -1,0 +1,88 @@
+.resume-root {
+  margin: 3rem 0;
+  background-color: $offwhite;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resume {
+  padding: 3rem;
+}
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-link,
+.resume-link:hover {
+  text-decoration: none;
+  color: $black;
+}
+
+.resume-header-title {
+  display: flex;
+  align-items: flex-end;
+  h2 {
+    font-family: $font-stack-quaternary;
+    font-size: 4.5rem;
+  }
+}
+
+.resume-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-subheader {
+  margin-bottom: 2rem;
+}
+
+.resume-body-left {
+  margin-right: 1.5rem;
+}
+
+.resume-body-right {
+  width: 55%;
+}
+
+.project-title {
+  margin-bottom: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.subtext {
+  font-size: 0.9rem;
+}
+
+.resume-experience,
+.resume-projects {
+  margin-bottom: 2rem;
+}
+
+.aws-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.aws-badge {
+  width: 100px;
+  img {
+    width: 100%;
+  }
+}
+
+.aws-info {
+  display: flex;
+  align-items: flex-end;
+  p {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+}
