@@ -75,6 +75,9 @@ const backend = [
 
 const other = [
   {
+    skill: "AWS",
+  },
+  {
     skill: "Mobile Responsive Design",
   },
   {
@@ -98,17 +101,15 @@ const other = [
   {
     skill: "Command Line",
   },
-  {
-    skill: "AWS",
-  },
-  {
-    skill: "W3C Web Content Accessibility",
-  },
+
   {
     skill: "Browser Developer Tools",
   },
   {
     skill: "Basic Photoshop",
+  },
+  {
+    skill: "W3C Web Content Accessibility",
   },
 ];
 

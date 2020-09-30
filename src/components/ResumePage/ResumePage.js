@@ -15,6 +15,9 @@ const ResumePage = () => {
           </div>
           <div className="resume-header-info">
             <p>
+              <FontAwesomeIcon icon="map-pin" /> Brooklyn, NY
+            </p>
+            <p>
               <a
                 href="mailto:goon.sarah@gmail.com"
                 target="_top"
@@ -63,16 +66,16 @@ const ResumePage = () => {
         </div>
         <div className="resume-subheader">
           <p>
-            Mission-driven Full Stack Web Developer interested in the Cloud with
-            a life-long dedication to learning. Intrinsically motivated to
-            improve daily-life through technology. Adept at incorporating
-            technology to find scalable and efficient solutions.
+            Mission-driven Full Stack Web Developer with a life-long dedication
+            to learning. Intrinsically motivated to improve daily-life through
+            technology. Adept at incorporating technology to find scalable and
+            efficient solutions.
           </p>
         </div>
         <div className="resume-body">
-          <div className="resume-body-left">
+          <div className="resume-body-main">
             <div className="resume-experience">
-              <div>
+              <div className="resume-body-field">
                 <h4>EXPERIENCE</h4>
               </div>
               <div>
@@ -117,7 +120,7 @@ const ResumePage = () => {
               </div>
             </div>
             <div className="resume-projects">
-              <div>
+              <div className="resume-body-field">
                 <h4>PROJECTS</h4>
               </div>
               <div>
@@ -192,10 +195,19 @@ const ResumePage = () => {
               </div>
             </div>
             <div>
-              <div>
+              <div className="resume-body-field ">
                 <h4>EDUCATION</h4>
               </div>
               <div className="aws-container">
+                <div className="aws-info">
+                  <p>
+                    <span className="bold">
+                      AWS Certified Cloud Practioner{" "}
+                    </span>
+                    <br />
+                    Validation Number: G74TKPLKPEFEQRKJ
+                  </p>
+                </div>
                 <div className="aws-badge">
                   <a
                     href="https://www.youracclaim.com/badges/cb7bb720-fb01-4b90-a511-2f6270dba3d4/public_url"
@@ -209,15 +221,6 @@ const ResumePage = () => {
                       alt="AWS CCP Badge"
                     />
                   </a>
-                </div>
-                <div className="aws-info">
-                  <p>
-                    <span className="bold">
-                      AWS Certified Cloud Practioner{" "}
-                    </span>
-                    <br />
-                    Validation Number: G74TKPLKPEFEQRKJ
-                  </p>
                 </div>
               </div>
               <div>
@@ -238,14 +241,14 @@ const ResumePage = () => {
               </div>
             </div>
           </div>
-          <div className="resume-body-right">
-            <div>
+          <div className="resume-body-side">
+            <div className="resume-body-field ">
               <h4>TECHNICAL SKILLS</h4>
             </div>
             <div>
               <p className="bold">Frontend</p>
               <div>
-                <ul>
+                <ul className="resume-body-side-skills">
                   {frontend.map((skill) => (
                     <li>{skill.skill}</li>
                   ))}
@@ -255,7 +258,7 @@ const ResumePage = () => {
             <div>
               <p className="bold">Backend</p>
               <div>
-                <ul>
+                <ul className="resume-body-side-skills">
                   {backend.map((skill) => (
                     <li>{skill.skill}</li>
                   ))}
@@ -265,7 +268,7 @@ const ResumePage = () => {
             <div>
               <p className="bold">Other</p>
               <div>
-                <ul>
+                <ul className="resume-body-side-skills">
                   {other.map((skill) => (
                     <li>{skill.skill}</li>
                   ))}
