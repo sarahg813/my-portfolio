@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ResumePage = () => {
   return (
     <Container className="resume-root">
-      <TitleComponent title="Resumé | Sarah Goon's Portfolio" />
+      <TitleComponent title="Résumé | Sarah Goon's Portfolio" />
       <Container className="resume">
         <div className="resume-header">
           <div className="resume-header-title">

@@ -38,7 +38,7 @@ const NavBar = (props) => {
             </NavItem>
             <NavItem>
               <NavLink tag={RouterLink} to="/resume" onClick={toggle}>
-                RESUME
+                RÉSUMÉ
               </NavLink>
             </NavItem>
             <NavItem>
